@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="LAB_11_pro.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Image ID="Image1" runat="server" Height="376px" ImageUrl="background.jpg" Width="545px" />
+            <br />
+            Связаться можно по номерам: 8-988-284-33-30, 8-989-834-53-41 <br />
+            Наш адрес: г.Краснодар, ул.Калинина 13/20<br />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" Width="200px" NavigateUrl="~/default.aspx">Главная</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Blue" Width="200px" NavigateUrl="~/sotr.aspx">Сотрудники</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Blue" Width="200px" NavigateUrl="~/works.aspx">Работы</asp:HyperLink>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
